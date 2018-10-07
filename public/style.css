@@ -1,0 +1,45 @@
+body {
+  padding-top: 5%;
+  background-color: antiquewhite;
+  font-size: 16px;
+}
+
+.logo-container {
+  overflow: hidden;
+  text-align: center;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.content {
+  text-align: center;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.username {
+  width: 200px;
+  height: 40px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #F37936;
+  color: #fff;
+  border-radius: 10px;
+  height: 24px;
+  outline: none;
+  width: 100px;
+}
+
+.hint {
+  margin-right: 10px;
+  font-weight: bolder
+}

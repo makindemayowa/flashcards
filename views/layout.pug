@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    title Landing Page
+    link(rel="stylesheet", href="/public/style.css")
+  body
+    include includes/header.pug
+    div.content
+      if name
+        h2 Welcome #{name}
+          form(action="/goodbye", method="post")
+            button(type="submit") Goodbye
+        if page === 'index'
+          a(href="/cards") Begin?
+      else
+        form(action="/hello", method="post")
+          label Please enter your name
+            br
+            br
+            input(type="text", name="name" required="required").username
+            br
+          button(type="submit").login submit
+      section
+        block content
+
